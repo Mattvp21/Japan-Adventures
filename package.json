@@ -1,0 +1,14 @@
+{
+  "name": "japan-travel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/_main.scss css/styles.css -w"
+  },
+  "author": "Matthew Van Pelt",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
