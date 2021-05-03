@@ -1,0 +1,40 @@
+
+footer {
+    position: relative;
+    height: 50vh;
+    background-color: #777;
+    top: -8.5rem;
+    z-index: -1;
+    top: -20rem;
+}
+
+
+
+a {
+    font-weight: 100;
+    font-size: 3rem;
+   
+    padding: 5rem;
+    color: black;
+   
+}
+
+.bottom-link:hover {
+    text-decoration: none;
+    font-size: 5rem;
+    color: white;
+}
+
+.footer__link {
+    position: relative;
+   top: 15rem;
+    text-align: center;
+    
+}
+
+.end {
+    position: relative;
+    text-align: center;
+    top: 5rem;
+    
+}

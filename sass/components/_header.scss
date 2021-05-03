@@ -1,0 +1,38 @@
+.header {
+    background-image: url("../images/header-photo.jpg");
+    height: 100vh;
+    padding: 3%;
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 0, 100% 0, 100% 86%, 0% 100%);
+
+    &__textbox {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    
+
+
+        &--heading {
+    
+            color: rgb(245, 245, 245);
+            font-size: 6rem;
+            font-weight: 400;
+            animation-name: fadeIn;
+            animation-duration: 3s;
+        }
+ 
+        &--span{
+            font-size: 4rem;
+            color: white;
+            font-weight: 300;
+            position: relative;
+            display: block;
+        }
+
+    }
+  
+    
+}
