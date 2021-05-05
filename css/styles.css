@@ -22,20 +22,6 @@ p {
   font-size: 3rem;
   font-weight: 300; }
 
-@media screen and (max-width: 900px) {
-  body {
-    display: flex;
-    flex-direction: column; }
-  .carousel-inner {
-    display: flex;
-    flex-direction: column; } }
-
-@media screen and (max-width: 750px) {
-  .carousel {
-    height: 30vh; }
-  .carousel-inner {
-    visibility: hidden; } }
-
 html {
   font-size: 62.5%;
   font-family: 'Noto', sans-serif; }
@@ -56,7 +42,6 @@ html {
   background-position: top;
   background-repeat: no repeat;
   background-size: cover;
-  z-index: 0;
   padding: 25rem 0;
   margin-top: -20vh; }
 
@@ -74,7 +59,8 @@ h2 {
   position: relative;
   height: 20rem;
   transform: skewY(5deg);
-  background-color: transparent; }
+  background-color: transparent;
+  display: flex; }
   .card__side {
     height: 40rem;
     transition: all .8s ease;
@@ -223,16 +209,14 @@ h2 {
 
 footer {
   position: relative;
-  height: 50vh;
+  height: 30vh;
   background-color: #777;
-  top: -8.5rem;
-  z-index: -1;
   top: -20rem; }
 
 a {
   font-weight: 100;
-  font-size: 3rem;
-  padding: 5rem;
+  font-size: 5rem;
+  padding: 8rem;
   color: black; }
 
 .bottom-link:hover {
@@ -242,13 +226,14 @@ a {
 
 .footer__link {
   position: relative;
-  top: 15rem;
+  top: 2rem;
   text-align: center; }
 
 .end {
   position: relative;
   text-align: center;
-  top: 5rem; }
+  top: 5rem;
+  font-weight: 100; }
 
 .header {
   background-image: url("../images/header-photo.jpg");
@@ -268,10 +253,25 @@ a {
       font-size: 6rem;
       font-weight: 400;
       animation-name: fadeIn;
-      animation-duration: 3s; }
+      animation-duration: 3s;
+      bottom: 15px; }
     .header__textbox--span {
       font-size: 4rem;
       color: white;
       font-weight: 300;
       position: relative;
-      display: block; }
+      display: block;
+      bottom: 15px; }
+
+.section-book {
+  height: 75rem;
+  padding: 15rem, 0;
+  background-color: aliceblue;
+  position: relative;
+  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+  top: -20rem; }
+
+.book {
+  background-image: url(../images/form.jpg);
+  height: 75rem;
+  background-size: cover; }

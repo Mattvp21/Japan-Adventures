@@ -1,20 +1,20 @@
 
 footer {
     position: relative;
-    height: 50vh;
+    height: 30vh;
     background-color: #777;
-    top: -8.5rem;
-    z-index: -1;
+   
     top: -20rem;
+    
 }
 
 
 
 a {
     font-weight: 100;
-    font-size: 3rem;
+    font-size: 5rem;
    
-    padding: 5rem;
+    padding: 8rem;
     color: black;
    
 }
@@ -27,7 +27,7 @@ a {
 
 .footer__link {
     position: relative;
-   top: 15rem;
+   top: 2rem;
     text-align: center;
     
 }
@@ -36,5 +36,5 @@ a {
     position: relative;
     text-align: center;
     top: 5rem;
-    
+    font-weight: 100;
 }

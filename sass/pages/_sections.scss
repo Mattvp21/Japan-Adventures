@@ -1,0 +1,14 @@
+.section-book {
+    height: 75rem;
+    padding: 15rem, 0;
+    background-color: aliceblue;
+    position: relative;
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+    top: -20rem;
+}
+
+.book {
+   background-image: url(../images/form.jpg);
+    height: 75rem;
+   background-size: cover;
+}
