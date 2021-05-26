@@ -1,27 +1,26 @@
 
 footer {
     position: relative;
-    height: 30vh;
-    background-color: #777;
+    height: 50vh;
+    background-color: #343a40;
+   transform: translateY(-50%)
    
-    top: -20rem;
     
 }
 
 
 
-a {
-    font-weight: 100;
-    font-size: 5rem;
-   
-    padding: 8rem;
-    color: black;
+.bottom-link {
+@include linkfont;
+   padding: 8rem;
+    
+    color: rgba(255, 255, 255, 0.5);
    
 }
 
 .bottom-link:hover {
     text-decoration: none;
-    font-size: 5rem;
+    
     color: white;
 }
 
@@ -37,4 +36,5 @@ a {
     text-align: center;
     top: 5rem;
     font-weight: 100;
+    color: rgba(255, 255, 255, 0.5);
 }

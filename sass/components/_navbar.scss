@@ -1,0 +1,22 @@
+.navbar {
+
+    padding: 2rem;
+
+    &-brand {
+        font-size: 2rem;
+    }
+
+    &-nav {
+        position: absolute;
+        left: 60%;
+
+       
+    }
+
+    .nav-item {
+       @include linkfont;
+       padding: 3rem;
+    }
+
+   
+}

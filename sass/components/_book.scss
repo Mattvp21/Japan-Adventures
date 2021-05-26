@@ -1,0 +1,86 @@
+.book {
+    background-color: rgba($color-white, .2) ;
+    width: 60%;
+    height: 60%;
+    
+    position: absolute;
+    @include centerItem;
+    border: 2px;
+    border-style: outset;
+}    
+
+    .form {
+        
+        &__group {
+
+        position: relative;
+        left: 8rem;
+        
+        &:not(:last-child) {
+            margin-bottom: 4rem;
+            
+        }
+
+    }   
+
+        &__input {
+            width: 80%;
+            padding: 1.5rem 2rem;
+            color: inherit;
+            font-family: inherit;
+            font-size: 1.5rem;
+            text-align: center;
+            border-bottom: 3px solid transparent;
+            border-radius: 3px;
+            border: none;
+            background-color: rgba($color-white, .5);
+            transition: all .3s;
+
+            &:focus {
+                outline: none;
+                box-shadow: 0 1rem 2rem rgba($color-black, .1);
+                border-bottom: 3px solid $color-primary-dark;
+            }
+
+            &:focus:invalid {
+                border-bottom: 3px solid $color-primary-light;
+            }
+    
+            &::-webkit-input-placeholder {
+                color: $color-grey-light-1;
+            }
+        }
+        
+        &__label {
+            display: block;
+            font-family: inherit;
+            font-size: 2rem;
+            font-weight: 400;
+            position: relative;
+            left: 35%;
+            top: 2rem;
+            color: $color-white;
+            display: block;
+            transition: all .3s;
+        }
+
+        &__input:placeholder-shown + &__label {
+            opacity: 0;
+            visibility: hidden;
+            transform: rotate(90deg);
+        }
+
+        &__button {
+           display: inline;
+           position: relative;
+           text-align: center;
+           left: 30rem;
+        }
+   
+    }
+
+
+
+.form__heading {
+    top: -5rem;
+}

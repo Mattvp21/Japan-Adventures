@@ -5,3 +5,20 @@
         clear: both;
     }
 }
+
+@mixin centerItem {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin linkfont {
+    
+    font-weight: 100;
+    font-size: 4rem;
+}
+
+@mixin headerfont {
+    font-size: 6rem;
+    font-weight: 100;
+}

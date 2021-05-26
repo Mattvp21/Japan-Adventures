@@ -7,11 +7,10 @@
     clip-path: polygon(0 0, 100% 0, 100% 86%, 0% 100%);
 
     &__textbox {
+        @include centerItem;
         position: absolute;
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -50%);
         text-align: center;
+        
     
 
 
@@ -32,6 +31,8 @@
             position: relative;
             display: block;
             bottom: 15px;
+            animation-name: fadeIn;
+            animation-duration: 3s;
         }
 
     }
