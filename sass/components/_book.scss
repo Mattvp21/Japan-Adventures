@@ -8,7 +8,15 @@
     border: 2px;
     border-style: outset;
 
-    
+    @include respond(tabport) {
+        height: 45%;
+       
+     }
+
+     @include respond(phone) {
+        height: 45%;
+       
+     }
 
     
 }    
@@ -53,7 +61,7 @@
 
              @include respond(phone) {
                 width: 20rem;
-               
+               padding: 0;
              }
 
              
@@ -107,7 +115,7 @@
 
            @include respond(phone) {
             left: 30%;
-           
+           bottom: 5rem;
          }
            
         }

@@ -24,6 +24,11 @@
     height: 100vh;
 }
 
+@include respond(phone) {
+    height: 80vh;
+    
+}
+
    
 }
 
@@ -32,7 +37,17 @@ h2 {
    
     position: relative;
     text-align: center;
-    
+    margin-bottom: 5rem;
+
+    @include respond(tabport) {
+        transform: translateY(-15rem);
+        margin-bottom: 1rem;
+     }
+
+    @include respond(phone) {
+        transform: translateY(-15rem);
+       
+     }
    
 }
 
@@ -42,12 +57,19 @@ h2 {
     -moz-perspective: 150rem;
     position: relative;
     width: 90%;
-    margin-top: 5rem;
+
     
     
     background-color: transparent;
+    @include respond(tabport) {
+        transform: translateY(-10rem);
+       
+     }
 
-    
+    @include respond(phone) {
+        transform: translateY(-15rem);
+       
+     }
     
 
     &__side {
