@@ -19,6 +19,45 @@
 }
 
 @mixin headerfont {
-    font-size: 6rem;
-    font-weight: 100;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+
+
+// MEDIA QUERY MANAGER
+
+/*
+0-600px Phone
+600 - 900px tablet/Portrait
+900 - 1200 tablet landscape
+1200-1800 normal styles
+1800 + big desktop
+
+*/
+
+/*
+breakpoint arguments:
+-phone
+-tabport
+-tabland
+-big-desktop
+*/
+
+@mixin respond ($breakpoint) {
+    @if $breakpoint == phone {
+        @media (max-width: 37.5em) {@content};
+    }
+
+    @if $breakpoint == tabport {
+        @media (max-width: 56.25em) {@content};
+    }
+
+    @if $breakpoint == tabland {
+        @media (max-width: 75em) {@content};
+    }
+
+    @if $breakpoint == big-desktop {
+        @media (min-width: 112.5em) {@content};
+    }
 }

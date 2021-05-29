@@ -1,7 +1,7 @@
 .book {
     background-color: rgba($color-white, .2) ;
     width: 60%;
-    height: 60%;
+    height: 50%;
     
     position: absolute;
     @include centerItem;
@@ -71,10 +71,9 @@
         }
 
         &__button {
-           display: inline;
-           position: relative;
-           text-align: center;
-           left: 30rem;
+           display: block;
+           position: absolute;
+            transform: translate(32rem,-3.5rem);
         }
    
     }

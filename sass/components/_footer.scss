@@ -1,9 +1,11 @@
 
 footer {
     position: relative;
-    height: 50vh;
+    height: 20vh;
     background-color: #343a40;
-   transform: translateY(-50%)
+   transform: translateY(-20rem)
+
+  
    
     
 }
@@ -35,6 +37,7 @@ footer {
     position: relative;
     text-align: center;
     top: 5rem;
+    font-size: 2rem;
     font-weight: 100;
     color: rgba(255, 255, 255, 0.5);
 }

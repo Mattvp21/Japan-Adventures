@@ -1,4 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap");
+/*
+0-600px Phone
+600 - 900px tablet/Portrait
+900 - 1200 tablet landscape
+1200-1800 normal styles
+1800 + big desktop
+
+*/
+/*
+breakpoint arguments:
+-phone
+-tabport
+-tabland
+-big-desktop
+*/
 @keyframes fadeIn {
   from {
     color: transparent; }
@@ -18,13 +32,24 @@ body {
   box-sizing: border-box;
   padding: 0% 5% 0 5%; }
 
-p {
-  font-size: 3rem;
-  font-weight: 300; }
-
 html {
-  font-size: 62.5%;
-  font-family: 'Lato', sans-serif; }
+  font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+body {
+  /* font is inherited from the body which is why we manipulate it there. */
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: #856a6a;
+  padding: 5rem; }
 
 .u-margin-small {
   margin-top: 3rem; }
@@ -34,7 +59,7 @@ html {
 
 .adventures {
   position: relative;
-  height: 132vh;
+  height: 150vh;
   top: -5rem;
   background-image: linear-gradient(rgba(255, 255, 255, 0.616), white), url(../images/carousel-backround.jpg);
   clip-path: polygon(0 15%, 100% 0, 100% 90%, 0% 100%);
@@ -45,8 +70,8 @@ html {
   margin-top: -20vh; }
 
 h2 {
-  font-size: 6rem;
-  font-weight: 100;
+  font-size: 3rem;
+  font-weight: 700;
   position: relative;
   text-align: center;
   bottom: 10rem; }
@@ -55,6 +80,7 @@ h2 {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
+  width: 90%;
   background-color: transparent; }
   .card__side {
     height: 50rem;
@@ -64,6 +90,7 @@ h2 {
     left: 0;
     width: 100%;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     border-radius: 3px;
     overflow: hidden;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
@@ -148,7 +175,7 @@ h2 {
 .book {
   background-color: rgba(255, 255, 255, 0.2);
   width: 60%;
-  height: 60%;
+  height: 50%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -201,10 +228,9 @@ h2 {
   transform: rotate(90deg); }
 
 .form__button {
-  display: inline;
-  position: relative;
-  text-align: center;
-  left: 30rem; }
+  display: block;
+  position: absolute;
+  transform: translate(32rem, -3.5rem); }
 
 .form__heading {
   top: -5rem; }
@@ -268,9 +294,9 @@ h2 {
 
 footer {
   position: relative;
-  height: 50vh;
+  height: 20vh;
   background-color: #343a40;
-  transform: translateY(-50%); }
+  transform: translateY(-20rem); }
 
 .bottom-link {
   font-weight: 100;
@@ -291,12 +317,13 @@ footer {
   position: relative;
   text-align: center;
   top: 5rem;
+  font-size: 2rem;
   font-weight: 100;
   color: rgba(255, 255, 255, 0.5); }
 
 .header {
   background-image: url("../images/header-photo.jpg");
-  height: 100vh;
+  height: 90vh;
   padding: 3%;
   background-size: cover;
   background-position: top;
@@ -309,18 +336,18 @@ footer {
     text-align: center; }
     .header__textbox--heading {
       color: whitesmoke;
-      font-size: 6rem;
+      font-size: 4rem;
       font-weight: 400;
       animation-name: fadeIn;
       animation-duration: 3s;
       bottom: 15px; }
     .header__textbox--span {
-      font-size: 4rem;
+      font-size: 3rem;
       color: white;
-      font-weight: 300;
+      font-weight: 100;
       position: relative;
       display: block;
-      bottom: 15px;
+      bottom: 5px;
       animation-name: fadeIn;
       animation-duration: 3s; }
 
