@@ -10,12 +10,12 @@
 
     @include respond(tabport) {
         height: 45%;
-       
+       margin-top: 3rem;
      }
 
      @include respond(phone) {
         height: 45%;
-       
+       margin-top: 3rem;
      }
 
     
@@ -32,6 +32,16 @@
             margin-bottom: 4rem;
             
         }
+
+        @include respond(tabport) {
+           
+           margin-top: -5rem;
+         }
+    
+         @include respond(phone) {
+          
+           margin-top: 6rem;
+         }
 
     }   
 
@@ -93,7 +103,10 @@
             display: block;
             transition: all .3s;
 
-            
+            @include respond(tabport) {
+                font-size: 1rem;
+               
+             }
 
         }
 
@@ -109,8 +122,8 @@
            left: 40%;
            bottom: 60%;
            @include respond(tabport) {
-            left: 35%;
-           
+            left: 20rem;
+            top: -3rem;
          }
 
            @include respond(phone) {
