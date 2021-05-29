@@ -11,6 +11,7 @@
     @include respond(tabport) {
         height: 45%;
        margin-top: 3rem;
+       border: none;
      }
 
      @include respond(phone) {
@@ -69,10 +70,7 @@
                
              }
 
-             @include respond(phone) {
-                width: 20rem;
-               padding: 0;
-             }
+            
 
              
 
