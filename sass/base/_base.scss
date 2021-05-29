@@ -12,7 +12,11 @@
     
     background-color: $color-body;
     box-sizing: border-box;
-    padding: 0% 5% 0 5%;
+   padding: 3%;
+
+    @include respond(tabland) {
+      padding: 0;
+  }
     
 }
 

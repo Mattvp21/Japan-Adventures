@@ -6,12 +6,25 @@
     top: -5rem;
     background-image:linear-gradient(rgba(255, 255, 255, 0.616), white), url(../images/carousel-backround.jpg);
     clip-path: polygon(0 15%, 100% 0, 100% 90%, 0% 100%);
+    -webkit-background-clip: polygon(0 15%, 100% 0, 100% 90%, 0% 100%);
     background-position: top;
     background-repeat: no repeat;
     background-size: cover;
     
-    padding: 25rem 0;
-    margin-top: -20vh;
+    padding: 20rem 0;
+   margin-top: -15vh;
+
+   @include respond(tabland) {
+   height: 120vh;
+}
+
+   @include respond(tabport) {
+    clip-path: polygon(0 0%, 100% 0, 100% 100%, 0% 100%);
+    -webkit-background-clip: polygon(0 0%, 100% 0, 100% 100%, 0% 100%);
+    height: 100vh;
+}
+
+   
 }
 
 h2 {
@@ -19,7 +32,7 @@ h2 {
    
     position: relative;
     text-align: center;
-    bottom: 10rem;
+    
    
 }
 
@@ -29,9 +42,12 @@ h2 {
     -moz-perspective: 150rem;
     position: relative;
     width: 90%;
+    margin-top: 5rem;
     
     
     background-color: transparent;
+
+    
     
 
     &__side {
@@ -48,6 +64,7 @@ h2 {
         border-radius: 3px;
         overflow: hidden;
         box-shadow: $shadow-property;
+       
 
         &--front {
             background-color: rgba($color-grey-light-1, .85);
@@ -119,6 +136,10 @@ h2 {
         right: 2rem;
         text-align: right;
         width: 75%;
+
+        @include respond(tabport) {
+            font-size: 1.8rem
+         }
     }
 
     &__heading-span {
@@ -160,6 +181,14 @@ h2 {
                 &:not(:last-child) {
                     border-bottom: 1px solid $color-grey-light-2;
                 }
+
+                @include respond(tabport) {
+                   font-size: 1rem;
+                 }
+
+                 @include respond(tabland) {
+                    font-size: 1.3rem;
+                  }
             }    
         }
     }

@@ -1,12 +1,16 @@
 .book {
     background-color: rgba($color-white, .2) ;
     width: 60%;
-    height: 50%;
+    height: 60%;
     
     position: absolute;
     @include centerItem;
     border: 2px;
     border-style: outset;
+
+    
+
+    
 }    
 
     .form {
@@ -24,7 +28,8 @@
     }   
 
         &__input {
-            width: 80%;
+            position: relative;
+            width: 60rem;
             padding: 1.5rem 2rem;
             color: inherit;
             font-family: inherit;
@@ -35,6 +40,23 @@
             border: none;
             background-color: rgba($color-white, .5);
             transition: all .3s;
+
+            @include respond(tabland) {
+                width: 50rem;
+               
+             }
+
+             @include respond(tabport) {
+                width: 40rem;
+               
+             }
+
+             @include respond(phone) {
+                width: 20rem;
+               
+             }
+
+             
 
             &:focus {
                 outline: none;
@@ -62,6 +84,9 @@
             color: $color-white;
             display: block;
             transition: all .3s;
+
+            
+
         }
 
         &__input:placeholder-shown + &__label {
@@ -73,7 +98,18 @@
         &__button {
            display: block;
            position: absolute;
-            transform: translate(32rem,-3.5rem);
+           left: 40%;
+           bottom: 60%;
+           @include respond(tabport) {
+            left: 35%;
+           
+         }
+
+           @include respond(phone) {
+            left: 30%;
+           
+         }
+           
         }
    
     }

@@ -6,12 +6,25 @@
     background-position: top;
     clip-path: polygon(0 0, 100% 0, 100% 86%, 0% 100%);
 
+
+    @include respond(tabland) {
+        height: 85vh;
+    }
+
+    @include respond(tabport) {
+        height: 80vh;
+    }
+
     &__textbox {
         @include centerItem;
         position: absolute;
         text-align: center;
         
-    
+     
+
+    @include respond(tabport) {
+        bottom: 5rem;
+    }
 
 
         &--heading {

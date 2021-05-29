@@ -1,10 +1,16 @@
 .row    {
     max-width: $grid-width;
     margin: 0 auto;
-    margin-bottom: $gutter-horizontal;
+   
 
     &:not(:last-child)  {
         margin-bottom: $gutter-vertical;
+
+        @include respond(tabport) {
+           margin-bottom: $gutter-vertical-small;
+        }
+
+        
     }
 
     @include clearfix;
@@ -15,6 +21,12 @@
 
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
+
+            @include respond(tabport) {
+                margin-right: $gutter-vertical-small;
+            }
+
+           
         }
     }
     // ^ = start with * = contains $= end with
