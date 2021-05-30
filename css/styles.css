@@ -30,10 +30,10 @@ breakpoint arguments:
 body {
   background-color: #0d0a35;
   box-sizing: border-box;
-  padding: 3%; }
-  @media (max-width: 75em) {
+  padding: 3rem; }
+  @media (max-width: 56.25em) {
     body {
-      padding: 0; } }
+      padding: 1rem; } }
 
 html {
   font-size: 62.5%; }
@@ -51,8 +51,7 @@ body {
   /* font is inherited from the body which is why we manipulate it there. */
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  color: #856a6a;
-  padding: 5rem; }
+  color: #856a6a; }
 
 .u-margin-small {
   margin-top: 3rem; }
@@ -225,15 +224,23 @@ h2 {
   border-style: outset; }
   @media (max-width: 56.25em) {
     .book {
-      height: 35%;
+      height: 40%;
       margin-top: 3rem;
       border: none;
       background-color: transparent; } }
   @media (max-width: 37.5em) {
     .book {
-      height: 15%;
-      margin-top: 3rem;
+      height: 20%;
+      margin-top: -10rem;
       background-color: transparent; } }
+
+@media (max-width: 56.25em) {
+  .form__heading {
+    transform: translateY(0rem); } }
+
+@media (max-width: 37.5em) {
+  .form__heading {
+    transform: translateY(0rem); } }
 
 .form__group {
   position: relative;
@@ -257,16 +264,13 @@ h2 {
   border: none;
   background-color: rgba(255, 255, 255, 0.5);
   transition: all .3s; }
-  @media (max-width: 75em) {
-    .form__input {
-      width: 50rem; } }
   @media (max-width: 56.25em) {
     .form__input {
       width: 40rem; } }
   @media (max-width: 37.5em) {
     .form__input {
-      width: 30rem;
-      right: 12rem; } }
+      width: 35rem;
+      right: 13rem; } }
   .form__input:focus {
     outline: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
@@ -307,7 +311,7 @@ h2 {
       top: -3rem; } }
   @media (max-width: 37.5em) {
     .form__button {
-      left: 10%;
+      left: 15%;
       bottom: 5rem; } }
 
 .form__heading {
@@ -470,4 +474,7 @@ footer {
       clip-path: polygon(0 0%, 100% 0, 100% 100%, 0% 100%); } }
   @media (max-width: 56.25em) {
     .section-book {
-      height: 100vh; } }
+      height: 80vh; } }
+  @media (max-width: 37.5em) {
+    .section-book {
+      height: 65vh; } }
