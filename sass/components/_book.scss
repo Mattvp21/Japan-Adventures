@@ -9,14 +9,14 @@
     border-style: outset;
 
     @include respond(tabport) {
-        height: 45%;
+        height: 35%;
        margin-top: 3rem;
        border: none;
        background-color: transparent;
      }
 
      @include respond(phone) {
-        height: 45%;
+        height: 15%;
        margin-top: 3rem;
        background-color: transparent;
 
@@ -72,7 +72,7 @@
 
              @include respond(phone) {
                 width: 30rem;
-                right: 10rem;
+                right: 12rem;
              }
 
             
@@ -130,7 +130,7 @@
          }
 
            @include respond(phone) {
-            left: 15%;
+            left: 10%;
            bottom: 5rem;
          }
            

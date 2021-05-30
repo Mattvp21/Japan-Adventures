@@ -1,7 +1,7 @@
 *,
 *::before
 *::after {
-  Margin: 0;
+  margin: 0;
   padding: 0;
   box-sizing: inherit;
   /* change box model so borders and paddings are no longer added to the height and width of the box */ }
