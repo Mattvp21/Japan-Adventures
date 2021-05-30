@@ -266,7 +266,7 @@ h2 {
   @media (max-width: 37.5em) {
     .form__input {
       width: 30rem;
-      right: 7rem; } }
+      right: 10rem; } }
   .form__input:focus {
     outline: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
@@ -307,7 +307,7 @@ h2 {
       top: -3rem; } }
   @media (max-width: 37.5em) {
     .form__button {
-      left: 25%;
+      left: 15%;
       bottom: 5rem; } }
 
 .form__heading {

@@ -72,7 +72,7 @@
 
              @include respond(phone) {
                 width: 30rem;
-                right: 7rem;
+                right: 10rem;
              }
 
             
@@ -130,7 +130,7 @@
          }
 
            @include respond(phone) {
-            left: 25%;
+            left: 15%;
            bottom: 5rem;
          }
            
