@@ -1,12 +1,19 @@
 .book {
-    background-color: rgba($color-white, .2) ;
+  
     width: 60%;
     height: 60%;
     
     position: absolute;
     @include centerItem;
-    border: 2px;
-    border-style: outset;
+    
+
+    @include respond(tabland) {
+        
+       margin-top: 3rem;
+       border: none;
+       background-color: transparent;
+     }
+    
 
     @include respond(tabport) {
         height: 40%;
@@ -17,7 +24,7 @@
 
      @include respond(phone) {
         height: 20%;
-       margin-top: -10rem;
+       
        background-color: transparent;
 
      }
@@ -27,26 +34,15 @@
 
     .form {
 
-        &__heading {
-
-            @include respond(tabport) {
-                transform: translateY(0rem);
-                
-              }
-            
-            @include respond(phone) {
-               transform: translateY(0rem);
-               
-             }
-        }
+       
         
         &__group {
 
         position: relative;
-        left: 8rem;
+        left: 10rem;
         
         &:not(:last-child) {
-            margin-bottom: 4rem;
+            margin-bottom: 2rem;
             
         }
 
@@ -73,7 +69,10 @@
             background-color: rgba($color-white, .5);
             transition: all .3s;
 
-            
+            @include respond(tabport) {
+                width: 50rem;
+               
+             }
 
              @include respond(tabport) {
                 width: 40rem;
@@ -81,7 +80,7 @@
              }
 
              @include respond(phone) {
-                width: 35rem;
+                width: 30rem;
                 right: 13rem;
              }
 
@@ -126,7 +125,7 @@
         &__input:placeholder-shown + &__label {
             opacity: 0;
             visibility: hidden;
-            transform: rotate(90deg);
+            transform: translateY(10rem) rotate(90deg);
         }
 
         &__button {
@@ -152,4 +151,15 @@
 
 .form__heading {
     top: -5rem;
+    right: -1rem;
+
+    @include respond(tabport) {
+       
+        top: 5rem;
+      }
+    
+    @include respond(phone) {
+      right: 2rem;
+       
+     }
 }
