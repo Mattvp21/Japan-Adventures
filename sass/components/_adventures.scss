@@ -21,7 +21,7 @@
    @include respond(tabport) {
     clip-path: polygon(0 0%, 100% 0, 100% 100%, 0% 100%);
     -webkit-background-clip: polygon(0 0%, 100% 0, 100% 100%, 0% 100%);
-    
+    display: none;
 }
 
 @include respond(phone) {

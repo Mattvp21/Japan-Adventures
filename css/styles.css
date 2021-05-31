@@ -77,7 +77,8 @@ body {
   @media (max-width: 56.25em) {
     .adventures {
       clip-path: polygon(0 0%, 100% 0, 100% 100%, 0% 100%);
-      -webkit-background-clip: polygon(0 0%, 100% 0, 100% 100%, 0% 100%); } }
+      -webkit-background-clip: polygon(0 0%, 100% 0, 100% 100%, 0% 100%);
+      display: none; } }
   @media (max-width: 37.5em) {
     .adventures {
       display: none; } }
@@ -207,7 +208,7 @@ h2 {
       background-color: transparent; } }
   @media (max-width: 56.25em) {
     .book {
-      height: 40%;
+      height: 90%;
       margin-top: 3rem;
       border: none;
       background-color: transparent; } }
@@ -221,13 +222,17 @@ h2 {
   left: 10rem; }
   .form__group:not(:last-child) {
     margin-bottom: 2rem; }
+  @media (max-width: 75em) {
+    .form__group {
+      transform: translateY(-3rem);
+      margin-top: 0rem; } }
   @media (max-width: 56.25em) {
     .form__group {
       transform: translateY(-3rem);
       margin-top: 0rem; } }
   @media (max-width: 37.5em) {
     .form__group {
-      transform: translate(7rem, -5rem);
+      transform: translate(2rem, -5rem);
       margin-top: 2rem; } }
 
 .form__input {
@@ -293,7 +298,7 @@ h2 {
       top: -3rem; } }
   @media (max-width: 37.5em) {
     .form__button {
-      left: 27%;
+      left: 20%;
       transform: translateY(-3rem); } }
 
 .form__heading {
@@ -401,12 +406,6 @@ footer {
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 86%, 0% 100%); }
-  @media (max-width: 75em) {
-    .header {
-      height: 85vh; } }
-  @media (max-width: 56.25em) {
-    .header {
-      height: 80vh; } }
   .header__textbox {
     top: 50%;
     left: 50%;

@@ -16,7 +16,7 @@
     
 
     @include respond(tabport) {
-        height: 40%;
+        height: 90%;
        margin-top: 3rem;
        border: none;
        background-color: transparent;
@@ -46,13 +46,18 @@
             
         }
 
+        @include respond(tabland) {
+            transform: translateY(-3rem);
+             margin-top: 0rem;
+           }
+
         @include respond(tabport) {
           transform: translateY(-3rem);
            margin-top: 0rem;
          }
 
          @include respond(phone) {
-            transform: translate(7rem,-5rem);
+            transform: translate(2rem,-5rem);
             margin-top: 2rem;
           }
     
@@ -144,7 +149,7 @@
          }
 
            @include respond(phone) {
-            left: 27%;
+            left: 20%;
            transform: translateY(-3rem);
          }
            
