@@ -213,7 +213,7 @@ h2 {
       background-color: transparent; } }
   @media (max-width: 37.5em) {
     .book {
-      height: 20%;
+      height: 50%;
       background-color: transparent; } }
 
 .form__group {
@@ -223,7 +223,12 @@ h2 {
     margin-bottom: 2rem; }
   @media (max-width: 56.25em) {
     .form__group {
-      margin-top: -5rem; } }
+      transform: translateY(-3rem);
+      margin-top: 0rem; } }
+  @media (max-width: 37.5em) {
+    .form__group {
+      transform: translate(7rem, -5rem);
+      margin-top: 2rem; } }
 
 .form__input {
   position: relative;
@@ -288,8 +293,8 @@ h2 {
       top: -3rem; } }
   @media (max-width: 37.5em) {
     .form__button {
-      left: 15%;
-      bottom: 5rem; } }
+      left: 27%;
+      transform: translateY(-3rem); } }
 
 .form__heading {
   top: -5rem;
@@ -297,9 +302,6 @@ h2 {
   @media (max-width: 56.25em) {
     .form__heading {
       top: 5rem; } }
-  @media (max-width: 37.5em) {
-    .form__heading {
-      right: 2rem; } }
 
 .btn:link, .btn .btn:visited {
   text-transform: uppercase;

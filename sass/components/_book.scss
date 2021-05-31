@@ -23,7 +23,7 @@
      }
 
      @include respond(phone) {
-        height: 20%;
+        height: 50%;
        
        background-color: transparent;
 
@@ -47,9 +47,14 @@
         }
 
         @include respond(tabport) {
-          
-           margin-top: -5rem;
+          transform: translateY(-3rem);
+           margin-top: 0rem;
          }
+
+         @include respond(phone) {
+            transform: translate(7rem,-5rem);
+            margin-top: 2rem;
+          }
     
        
 
@@ -139,8 +144,8 @@
          }
 
            @include respond(phone) {
-            left: 15%;
-           bottom: 5rem;
+            left: 27%;
+           transform: translateY(-3rem);
          }
            
         }
@@ -159,7 +164,7 @@
       }
     
     @include respond(phone) {
-      right: 2rem;
+     
        
      }
 }
