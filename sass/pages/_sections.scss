@@ -7,19 +7,15 @@
     clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
     top: -15rem;
     @include respond(tabport) {
-    height: 90vh;
-    -webkit-background-clip:polygon(0 0%, 100% 0, 100% 100%, 0% 100%);;
-    clip-path: polygon(0 0%, 100% 0, 100% 100%, 0% 100%);
+  
     }
 
     @include respond(tabport) {
-        height: 80vh;
        
      }
 
      @include respond(phone) {
-        height: 65vh;
-       
+        
      }
 }
 

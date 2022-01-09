@@ -1,31 +1,30 @@
 .adventures {
-    position: relative;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+    
+   
+   
     height: 150vh;
-   
-   
-    top: -5rem;
     background-image:linear-gradient(rgba(255, 255, 255, 0.616), white), url(../images/carousel-backround.jpg);
-    clip-path: polygon(0 15%, 100% 0, 100% 90%, 0% 100%);
-    -webkit-background-clip: polygon(0 15%, 100% 0, 100% 90%, 0% 100%);
+  
     background-position: top;
     background-repeat: no repeat;
     background-size: cover;
     
-    padding: 20rem 0;
-   margin-top: -15vh;
+    padding: 15rem 0;
+   
 
    @include respond(tabland) {
-   height: 130vh;
+   height: 220vh;
 }
 
    @include respond(tabport) {
-    clip-path: polygon(0 0%, 100% 0, 100% 100%, 0% 100%);
-    -webkit-background-clip: polygon(0 0%, 100% 0, 100% 100%, 0% 100%);
-    display: none;
+    height: 230vh;
 }
 
 @include respond(phone) {
-  display: none;
+ height: 250vh
    
 }
 
@@ -39,15 +38,9 @@ h2 {
     text-align: center;
     margin-bottom: 5rem;
     color: black;
-    @include respond(tabport) {
-        transform: translateY(-15rem);
-        margin-bottom: 1rem;
-     }
+   
 
-    @include respond(phone) {
-        transform: translateY(-15rem);
-       
-     }
+    
    
 }
 
@@ -56,8 +49,11 @@ h2 {
     perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
-    height:52rem;
-
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    
     
     
     background-color: transparent;
@@ -71,12 +67,9 @@ h2 {
     &__side {
         
    
-        height: 52rem;
-        transition: all .8s ease;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
+        
+       
+        
         backface-visibility: hidden;
         -webkit-backface-visibility: hidden;
         border-radius: 3px;
@@ -114,11 +107,11 @@ h2 {
   
 
     &:hover &__side--front {
-        transform: rotateY(-180deg);
+        transform: scale(1rem);
     }
 
     &:hover &__side--back {
-        transform: rotateY(0deg);
+        
         }
         // FRONT SDE STYLING
     &__picture {
@@ -149,16 +142,16 @@ h2 {
         font-weight: 300;
         text-transform: uppercase;
         color: $color-white;
-        position: absolute;
-        top: 12rem;
-        right: 2rem;
+        
         text-align: right;
-        width: 75%;
+        
 
       
     }
 
     &__heading-span {
+        display: flex;
+        flex-wrap: wrap;
         padding: .5rem 1rem;
         box-decoration-break: clone;
         -webkit-box-decoration-break: clone;
@@ -185,7 +178,7 @@ h2 {
         padding: 3rem;
         ul {
             list-style: none;
-            width: 80%;
+            
             margin: 0 auto;
 
         
@@ -209,25 +202,25 @@ h2 {
     &__cta {
         @include centerItem;
         position: absolute;
-        width: 90%;
+        
         text-align: center;
     }
 
-    &__price-box {
-        text-align: center;
-        color: $color-white;
-        margin-bottom: 8rem;
-    }
     
     
-    &__price-only {
-           text-transform: uppercase;
-            font-size: 1.4rem;
-    }
+    
+    
 
     &__price-value {
         font-weight: 300;
         font-size: 6rem;
+    }
+
+    @include respond(tabland) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       
     }
     
 }

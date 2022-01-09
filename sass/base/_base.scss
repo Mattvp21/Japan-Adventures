@@ -15,7 +15,7 @@
    padding: 3rem;
 
     @include respond(tabport) {
-      padding: 1rem;
+      
   }
     
 }
@@ -38,6 +38,10 @@ html {
       font-size: 75%;
   }
 
+}
+
+main {
+  overflow: hidden;
 }
 
 

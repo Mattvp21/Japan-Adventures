@@ -1,74 +1,22 @@
-.book {
   
-    width: 60%;
-    height: 60%;
-    
-    position: absolute;
-    @include centerItem;
-    
-
-    @include respond(tabland) {
-        
-       margin-top: 3rem;
-       border: none;
-       background-color: transparent;
-     }
-    
-
-    @include respond(tabport) {
-        height: 90%;
-       margin-top: 3rem;
-       border: none;
-       background-color: transparent;
-     }
-
-     @include respond(phone) {
-        height: 50%;
-       
-       background-color: transparent;
-
-     }
-
-    
-}    
 
     .form {
-
+        background-color: gray;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        transform: translateY(15rem);
+        padding: 6rem;
+        opacity: .75;
        
         
-        &__group {
-
-        position: relative;
-        left: 10rem;
-        
-        &:not(:last-child) {
-            margin-bottom: 2rem;
-            
-        }
-
-        @include respond(tabland) {
-            transform: translateY(-3rem);
-             margin-top: 0rem;
-           }
-
-        @include respond(tabport) {
-          transform: translateY(-3rem);
-           margin-top: 0rem;
-         }
-
-         @include respond(phone) {
-            transform: translate(2rem,-5rem);
-            margin-top: 2rem;
-          }
-    
-       
-
-    }   
+     
 
         &__input {
-            position: relative;
-            width: 60rem;
-            padding: 1.5rem 2rem;
+           padding: 2rem;
+            display: block;
+            justify-content: center;
             color: inherit;
             font-family: inherit;
             font-size: 1.5rem;
@@ -80,19 +28,16 @@
             transition: all .3s;
 
             @include respond(tabport) {
-                width: 50rem;
+                
                
              }
 
              @include respond(tabport) {
-                width: 40rem;
+                
                
              }
 
-             @include respond(phone) {
-                width: 30rem;
-                right: 13rem;
-             }
+            
 
             
 
@@ -114,21 +59,18 @@
         }
         
         &__label {
-            display: block;
+            
             font-family: inherit;
             font-size: 2rem;
             font-weight: 400;
             position: relative;
-            left: 35%;
-            top: 2rem;
+            
+            
             color: $color-white;
-            display: block;
+            
             transition: all .3s;
 
-            @include respond(tabport) {
-                font-size: 1rem;
-               
-             }
+           
 
         }
 
@@ -139,37 +81,13 @@
         }
 
         &__button {
-           display: block;
-           position: absolute;
-           left: 40%;
-           bottom: 60%;
-           @include respond(tabport) {
-            left: 20rem;
-            top: -3rem;
-         }
-
-           @include respond(phone) {
-            left: 20%;
-           transform: translateY(-3rem);
-         }
+           
+           
+          
            
         }
-   
     }
-
-
-
-.form__heading {
-    top: -5rem;
-    right: -1rem;
-
-    @include respond(tabport) {
-       
-        top: 5rem;
-      }
     
-    @include respond(phone) {
-     
-       
-     }
-}
+
+
+
