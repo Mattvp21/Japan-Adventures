@@ -5,7 +5,7 @@
     
    
    
-    height: 150vh;
+    
     background-image:linear-gradient(rgba(255, 255, 255, 0.616), white), url(../images/carousel-backround.jpg);
   
     background-position: top;
@@ -16,15 +16,15 @@
    
 
    @include respond(tabland) {
-   height: 220vh;
+   
 }
 
    @include respond(tabport) {
-    height: 230vh;
+    
 }
 
 @include respond(phone) {
- height: 250vh
+ 
    
 }
 
@@ -116,7 +116,7 @@ h2 {
         // FRONT SDE STYLING
     &__picture {
         background-size: cover;
-        height: 23rem;
+        height: 20rem;
         background-blend-mode: screen;
         clip-path: polygon(0 0, 100% 0,100% 85%, 0 100%);
         -webkit-clip-path:  polygon(0 0, 100% 0,100% 85%, 0 100%);
@@ -220,7 +220,13 @@ h2 {
         display: flex;
         flex-direction: column;
         justify-content: center;
-       
+        margin-top: 2rem;
+    }
+
+    @include respond(tabport) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     
 }

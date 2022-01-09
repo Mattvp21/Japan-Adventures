@@ -63,21 +63,11 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  height: 150vh;
   background-image: linear-gradient(rgba(255, 255, 255, 0.616), white), url(../images/carousel-backround.jpg);
   background-position: top;
   background-repeat: no repeat;
   background-size: cover;
   padding: 15rem 0; }
-  @media (max-width: 75em) {
-    .adventures {
-      height: 220vh; } }
-  @media (max-width: 56.25em) {
-    .adventures {
-      height: 230vh; } }
-  @media (max-width: 37.5em) {
-    .adventures {
-      height: 250vh; } }
 
 h2 {
   font-size: 3rem;
@@ -116,7 +106,7 @@ h2 {
     transform: scale(1rem); }
   .card__picture {
     background-size: cover;
-    height: 23rem;
+    height: 20rem;
     background-blend-mode: screen;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
@@ -167,6 +157,12 @@ h2 {
     font-weight: 300;
     font-size: 6rem; }
   @media (max-width: 75em) {
+    .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 2rem; } }
+  @media (max-width: 56.25em) {
     .card {
       display: flex;
       flex-direction: column;
@@ -247,8 +243,7 @@ h2 {
 footer {
   position: relative;
   overflow: hidden;
-  background-color: #343a40;
-  transform: translateY(-20rem); }
+  background-color: #343a40; }
 
 .bottom-link {
   font-weight: 100;
@@ -321,7 +316,4 @@ footer {
   height: 110vh;
   padding: 15rem, 0;
   background-image: url(../images/form.jpg);
-  position: relative;
-  -webkit-background-clip: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
-  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
-  top: -15rem; }
+  position: relative; }
