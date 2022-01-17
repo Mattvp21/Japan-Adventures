@@ -13,28 +13,105 @@
 
      <!--Font-->
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-
-</head>
-<body>
     <nav class="navbar  fixed-top navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Japan Adventures</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse navbar-right" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-            
-          </ul>
+      <a class="navbar-brand" href="#">Japan Adventures</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse navbar-right" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact.html">Contact</a>
+          </li>
+          
+        </ul>
+      </div>
+    </nav>
+</head>
+
+<body style="display: flex;flex-direction: row;justify-content: center; align-items: center; background-image: url('images/carousel-backround.jpg'); background-size: cover; background-repeat: no-repeat
+;" >
+  <main class="wrapper">
+    <div class="image__wrapper">
+      <img  src="images/anime.jpg" alt="anime">
+    </div>
+    <div class="accordion__wrapper">
+      <h1 class="title__accordion">FAQ</h1>
+    <div class="questions__accordions">
+        <div class="question-answer__accordion">
+            <div class="question">
+                <h3 class="title__question">
+                    How many guests can I invite?
+                </h3>
+                <img class="arrow" src="images/icon-arrow-down.svg" >
+            </div>
+            <div class="answer">
+                You can invite up to 2 additional guests on the Country Adventure. You can have 3 guests on the Food and Anime Adventure
+            </div>
         </div>
-      </nav>
+
+        <div class="question-answer__accordion">
+            <div class="question">
+                <h3 class="title__question">
+                    How much luggage can I bring?
+                </h3>
+                <img class="arrow" src="images/icon-arrow-down.svg" >
+            </div>
+            <div class="answer">
+                No more than 2 carry on bags. This is a backpacking adventure.
+            </div>
+        </div>
+
+        <div class="question-answer__accordion">
+            <div class="question">
+                <h3 class="title__question">
+                    What if I have food allergies?
+                </h3>
+                <img class="arrow" src="images/icon-arrow-down.svg" >
+            </div>
+            <div class="answer">
+                If you have food allergies, please let your tour guide know at the beginning of your stay.
+            </div>
+        </div>
+
+        <div class="question-answer__accordion">
+            <div class="question">
+                <h3 class="title__question">
+                    Can I cancel my trip?
+                </h3>
+                <img class="arrow" src="images/icon-arrow-down.svg" >
+            </div>
+            <div class="answer">
+                Yes! Send us a message and we’ll process your request no questions asked.
+            </div>
+        </div>
+        
+        <div class="question-answer__accordion">
+            <div class="question">
+                <h3 class="title__question">
+                    Do you provide additional support?
+                </h3>
+                <img class="arrow" src="images/icon-arrow-down.svg" >
+            </div>
+            <div class="answer ">
+                Chat and email support is available 24/7. Phone lines are open during normal business hours.
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+</main>
+
+
+<script src="accordian.js"></script>
 </body>
+
 </html>
